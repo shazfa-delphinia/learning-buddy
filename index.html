@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="chatbot-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fa-solid fa-grip"></i>
+                </button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-plus" style="margin-right: 12px;"></i> New Chat</a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="margin-right: 12px;"></i> Search Chat</a></li>
+                    <li><a href="#"><i class="fa-solid fa-list-check" style="margin-right: 12px;"></i> Quiz Learning Path</a></li>
+                    <li><a href="#"><i class="fa-solid fa-star" style="margin-right: 12px;"></i> Rekomendasi Kelas</a></li>
+                    <li><a href="#" class="active"><i class="fa-solid fa-chart-line" style="margin-right: 12px;"></i> Progress Belajar Mi...</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="chat-window">
+            
+            <header class="chat-header">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button id="toggle-sidebar-btn" class="icon-btn">
+                    <i id="toggle-icon" class="fa-solid fa-grip"></i>
+                </button>
+                <h2>Progress</h2>
+                <div class="avatar"></div>
+            </header>
+
+            <div class="chat-body">
+
+                <div class="message user-message">
+                    <div class="avatar"></div>
+                    <div class="message-content">
+                        <p>Bagaimana progress belajar saya minggu ini?</p>
+                    </div>
+                </div>
+
+                <div class="message bot-message">
+                    <div class="avatar"></div>
+                    <div class="message-content">
+                        <p>Kamu telah menyelesaikan modul 2 dari 6 modul Backend Developer Python. Bagus! Semakin mendekati "Belajar Fundamental Back-End dengan Python" agar tidak melewati jadwal belajar kamu dan dapat selesai tepat waktu.</p>
+                    </div>
+                </div>
+                
+                <div class="message user-message">
+                    <div class="avatar"></div>
+                    <div class="message-content">
+                        <p>Modul apa saja yang harus saya selesaikan agar dapat menyelesaikan kelas ini?</p>
+                    </div>
+                </div>
+
+                <div class="message bot-message">
+                    <div class="avatar"></div>
+                    <div class="message-content">
+                        <p>Tersisa 4 modul lagi untuk menyelesaikan kelas ini. Beberapa modul yang harus diselesaikan, yaitu:</p>
+                        <ol>
+                            <li>Belajar Fundamental Back-End dengan Python</li>
+                            <li>Memulai Pemrograman dengan Python</li>
+                            <li>Menjadi Google Cloud Architect</li>
+                            <li>Menjadi Google Cloud Engineer</li>
+                        </ol>
+                        <p style="margin-top: 12px;">Mau aku berikan roadmap belajarmu juga?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="chat-footer">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <input type="text" placeholder="Ketik pesanmu di sini...">
+                <button class="icon-btn send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </footer>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
