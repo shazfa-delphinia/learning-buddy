@@ -27,10 +27,12 @@
 
         <div class="menu">
             <div class="menu-item">
+                <span class="icon">💬</span>
                 <p>New Chat</p>
             </div>
 
             <div class="menu-item">
+                <span class="icon">🔍</span>
                 <p>Search Chat</p>
             </div>
         </div>
@@ -40,22 +42,28 @@
     </aside>
 
     <!-- MAIN CHAT PANEL -->
-    <main class="chat-panel">
+   <main class="chat-panel">
 
-        <div class="input-area">
-            <input type="text" placeholder="">
-            <button class="send">➤</button>
-        </div>
+  <!-- AREA CHAT ATAS -->
+  <div id="chat-messages" class="chat-messages"></div>
 
-    </main>
+  <!-- FORM INPUT BAWAH -->
+  <form id="chat-form" class="input-area">
+      <input 
+        id="chat-input" 
+        type="text" 
+        placeholder="Tanya sesuatu ke Learning Buddy..." 
+      />
+      <button type="submit" class="send">➤</button>
+  </form>
 
-</div>
+</main>
 
-<!-- BUBBLE CHATBOT -->
-<div id="chatBubble" class="chat-bubble" style="display:none;">
-    💬
+
+
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
